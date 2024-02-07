@@ -12,7 +12,7 @@
 
 img{
     display: flex;
-    width: 100px;
+    width: 150px;
     height: fit-content;
 
 
@@ -282,4 +282,39 @@ footer .column > a:hover{
     margin: auto;
     color: #fff;
     padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px) {
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+} 
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
 }
