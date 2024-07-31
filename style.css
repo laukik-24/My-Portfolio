@@ -166,7 +166,7 @@ section .header {
   transition: all 0.3s ease;
 }
 
-img {
+.card_image {
   height: 190px;
 }
 
