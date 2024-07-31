@@ -15,12 +15,12 @@ img {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #10002b;
+  background-color: #10002b !important;
 }
 
 nav {
@@ -72,17 +72,17 @@ nav {
 }
 
 .btn {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #7b2cbf;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 1rem 2rem !important;
+  font-size: 1rem !important;
+  color: #fff !important;
+  background-color: #7b2cbf !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #5a189a;
+  background-color: #5a189a !important;
 }
 
 .container {
@@ -122,8 +122,8 @@ header .content h1 {
 }
 
 header .content h1 span {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #e0aaff;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke: 1px #e0aaff !important;
 }
 
 header .content p {
@@ -158,12 +158,16 @@ section .header {
   gap: 2rem;
 }
 
-.features .card {
+.features .cards {
   background-color: #817aa4;
   padding: 1rem;
   border: 2px solid transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
+}
+
+img {
+  height: 190px;
 }
 
 .features .card:hover {
@@ -291,6 +295,9 @@ footer .column > a:hover {
     display: none;
   }
   .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: repeat(1, 1fr);
   }
   footer {
